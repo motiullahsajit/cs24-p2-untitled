@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./ecosync-backend
+    ports:
+      - "5000:5000"
+
+  frontend:
+    build: ./ecosync-frontend
+    ports:
+      - "3000:3000"
+
+  billgenerator:
+    build: ./billgenerator
+    ports:
+      - "6000:6000"
